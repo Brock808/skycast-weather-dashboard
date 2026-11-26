@@ -37,6 +37,11 @@ body {
   font-family: "DM Sans", "Segoe UI", Roboto;
 }
 
+.secondaryText {
+  color: var(--secondaryText);
+  font-size: 1.25rem;
+}
+
 /* Hud */
 #hudSkyCast {
   background: var(--cardBackground);
@@ -47,10 +52,49 @@ body {
 .iconSmall {
   height: 100px;
 }
-
-.positiveButton {
+/* Icons */
+/* Search button */
+.searchButton {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--primaryText);
   background-color: var(--positiveButtonBackground);
+  border: none;
+  border-radius: 12px;
+  padding: 8px 24px;
+  transition:
+    transform 0.2s,
+    filter 0.2s;
+}
+
+.searchButton:hover {
   color: var(--positiveButtonText);
+  background-color: var(--positiveButtonBackground);
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* positiveButton */
+.positiveButton {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--primaryText);
+  background-color: transparent;
+  border: 2px solid var(--positiveButtonBackground);
+  border-radius: 999px;
+  padding: 6px 24px;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.positiveButton:hover {
+  color: var(--primaryText);
+  background-color: rgba(79, 127, 209, 0.15);
+  border-color: var(--positiveButtonBackground);
+  transform: translateY(-2px);
 }
 
 /* Cards */

@@ -41,27 +41,56 @@
               class="form-control"
               placeholder="Search city..."
             />
-            <button id="btnSearch" class="positiveButton btn">Search</button>
+            <button id="btnSearch" class="searchButton btn">Search</button>
           </div>
         </div>
       </div>
     </header>
     <main>
       <div class="container mt-3">
-        <div class="row gap-4 g-0 justify-content-between">
+        <div class="row g-0 justify-content-between">
           <!-- Favourites -->
           <div class="col-12 col-md-3 card align-items-center p-2">
             <h2>Favourites</h2>
             <ul id="favouriteList"></ul>
           </div>
           <!-- Main display -->
-          <div class="col-12 col-md-8 d-flex flex-column gap-4">
+          <div class="col-12 col-md-9 d-flex flex-column gap-3 ps-4">
             <!-- Divided in two -->
             <!-- Actual position -->
-            <section class="mainCard p-2">First divition</section>
+            <section class="mainCard p-2">
+              <div class="d-flex justify-content-between px-4">
+                <h2>Here is the city</h2>
+                <button class="btn positiveButton">
+                  <i class="bi bi-star-fill"></i> Save
+                </button>
+              </div>
+              <div
+                class="d-flex pt-2 justify-content-around align-items-center"
+              >
+                <div class="text-center">
+                  <p id="actualDay" class="display-1 mx-auto">4"</p>
+                  <p id="actualWether" class="secondaryText">actual weather</p>
+                  <p class="secondaryText">
+                    Last update:<span id="lastUpdate"></span>
+                  </p>
+                </div>
+                <div>
+                  <p class="secondaryText">
+                    Feels like:<span id="feelsLike"></span>
+                  </p>
+                  <p class="secondaryText">
+                    Humidity:<span id="humidity"></span>
+                  </p>
+                  <p class="secondaryText">Wind:<span id="wind"></span></p>
+                </div>
+              </div>
+            </section>
 
             <!-- Next 7 days -->
-            <section class="card p-2">Second divition</section>
+            <section class="card p-2">
+              <h2>Next 7 days:</h2>
+            </section>
           </div>
         </div>
       </div>
