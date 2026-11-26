@@ -1,0 +1,56 @@
+:root {
+  /* Background */
+  --pageBackgroundTop: #0b1120;
+  --pageBackgroundBottom: #1e1b4b;
+  /* Cards */
+  --cardBackground: rgba(255, 255, 255, 0.06);
+  --cardBorder: rgba(255, 255, 255, 0.12);
+  /* Text */
+  --primaryText: #f1f5f9;
+  --secondaryText: #94a3b8;
+  /* Icons */
+  --iconSun: #fbbf24;
+  --iconCloud: #cbd5e1;
+  --iconRain: #38bdf8;
+  --iconSnow: #e0f2fe;
+  --iconStorm: #a78bfa;
+  /* Buttons */
+  /* Positive Button */
+  --positiveButtonBackground: #38bdf8;
+  --positiveButtonText: #0b1120;
+  /* Negative Button  */
+  --negativeButtonBackground: #f43f5e;
+  --negativeButtonText: #ffffff;
+}
+
+body {
+  color: var(--primaryText);
+  background: linear-gradient(
+    var(--pageBackgroundTop),
+    var(--pageBackgroundBottom)
+  );
+  height: 100vh;
+}
+
+/* Hud */
+#hudSkyCast {
+  background: var(--cardBackground);
+  border: 1px solid var(--cardBorder);
+  border-radius: 16px;
+}
+
+.iconSmall {
+  height: 100px;
+}
+
+.positiveButton {
+  background-color: var(--positiveButtonBackground);
+  color: var(--positiveButtonText);
+}
+
+/* Cards */
+.card {
+  background: var(--cardBackground);
+  border: 1px solid var(--cardBorder);
+  border-radius: 16px;
+}
