@@ -5,6 +5,10 @@
   /* Cards */
   --cardBackground: rgba(255, 255, 255, 0.06);
   --cardBorder: rgba(255, 255, 255, 0.12);
+  /* Main Card */
+  --mainCardBgTop: rgba(56, 189, 248, 0.18);
+  --mainCardBgBottom: rgba(129, 140, 248, 0.12);
+  --mainCardBorder: rgba(56, 189, 248, 0.35);
   /* Text */
   --primaryText: #f1f5f9;
   --secondaryText: #94a3b8;
@@ -30,6 +34,7 @@ body {
     var(--pageBackgroundBottom)
   );
   height: 100vh;
+  font-family: "DM Sans", "Segoe UI", Roboto;
 }
 
 /* Hud */
@@ -50,7 +55,14 @@ body {
 
 /* Cards */
 .card {
+  color: var(--primaryText);
   background: var(--cardBackground);
   border: 1px solid var(--cardBorder);
+  border-radius: 16px;
+}
+
+.mainCard {
+  background: linear-gradient(var(--mainCardBgTop), var(--mainCardBgBottom));
+  border: 1px solid rgba(56, 189, 248, 0.35);
   border-radius: 16px;
 }

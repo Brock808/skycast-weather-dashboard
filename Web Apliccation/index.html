@@ -18,11 +18,54 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <div class="container">
+        <div
+          id="hudSkyCast"
+          class="d-flex justify-content-between align-items-center p-3 mt-4"
+        >
+          <img
+            src="logo/skycast-small-icon.png"
+            alt="smaillIcon"
+            class="iconSmall"
+          />
+          <h1>SkyCast</h1>
+          <div class="input-group ps-5">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search city..."
+            />
+            <button id="btnSearch" class="positiveButton btn">Search</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container mt-3">
+        <div class="row gap-4 g-0 justify-content-between">
+          <!-- Favourites -->
+          <div class="col-12 col-md-3 card align-items-center p-2">
+            <h2>Favourites</h2>
+            <ul id="favouriteList"></ul>
+          </div>
+          <!-- Main display -->
+          <div class="col-12 col-md-8 d-flex flex-column gap-4">
+            <!-- Divided in two -->
+            <!-- Actual position -->
+            <section class="mainCard p-2">First divition</section>
+
+            <!-- Next 7 days -->
+            <section class="card p-2">Second divition</section>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>
