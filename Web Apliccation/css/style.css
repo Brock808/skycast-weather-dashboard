@@ -110,3 +110,8 @@ body {
   border: 1px solid rgba(56, 189, 248, 0.35);
   border-radius: 16px;
 }
+
+/* Footer */
+.largeIcon {
+  width: 300px;
+}

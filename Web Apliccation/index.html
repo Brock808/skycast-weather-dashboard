@@ -24,6 +24,7 @@
 
   <body>
     <header>
+      <p class="d-flex justify-content-center pt-3">Future live clock</p>
       <div class="container">
         <div
           id="hudSkyCast"
@@ -35,14 +36,17 @@
             class="iconSmall"
           />
           <h1>SkyCast</h1>
-          <div class="input-group ps-5">
+          <form class="input-group px-4" style="max-width: 900px">
             <input
               type="search"
               class="form-control"
               placeholder="Search city..."
             />
             <button id="btnSearch" class="searchButton btn">Search</button>
-          </div>
+          </form>
+          <button id="btnChangeGrades" class="btn positiveButton">
+            °C / °F
+          </button>
         </div>
       </div>
     </header>
@@ -60,7 +64,7 @@
             <!-- Actual position -->
             <section class="mainCard p-2">
               <div class="d-flex justify-content-between px-4">
-                <h2>Here is the city</h2>
+                <h2 id="updateCity">Here is the city</h2>
                 <button class="btn positiveButton">
                   <i class="bi bi-star-fill"></i> Save
                 </button>
@@ -69,8 +73,10 @@
                 class="d-flex pt-2 justify-content-around align-items-center"
               >
                 <div class="text-center">
-                  <p id="actualDay" class="display-1 mx-auto">4"</p>
-                  <p id="actualWether" class="secondaryText">actual weather</p>
+                  <p id="currentWetherNumber" class="display-1 mx-auto">4"</p>
+                  <p id="currentWetherText" class="secondaryText">
+                    current weather
+                  </p>
                   <p class="secondaryText">
                     Last update:<span id="lastUpdate"></span>
                   </p>
@@ -90,13 +96,24 @@
             <!-- Next 7 days -->
             <section class="card p-2">
               <h2>Next 7 days:</h2>
+              <div id="nextDaysRow" class="row"></div>
             </section>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <!-- place footer here -->
+      <hr />
+      <div class="container d-flex justify-content-center align-items-center">
+        <img
+          class="largeIcon"
+          src="logo/skycast-large-icon.png"
+          alt="footerIcon"
+        />
+        <p class="secondaryText">
+          First proyect with API by Marcos Cattaneo student at Noroff Norway
+        </p>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script
